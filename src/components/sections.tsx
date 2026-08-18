@@ -1,8 +1,6 @@
-import { Link } from "@tanstack/react-router";
-import { Clock, HandPlatter, Leaf, PartyPopper, Soup, Sparkles } from "lucide-react";
+import { Clock, HandPlatter, Heart, Leaf, PartyPopper, Soup, Sparkles, Utensils } from "lucide-react";
 import founderStory from "@/assets/founder-story.asset.json";
 import founderChef from "@/assets/founder-chef.asset.json";
-import { Button } from "@/components/ui/button";
 
 export function StorySection() {
   return (
@@ -16,18 +14,43 @@ export function StorySection() {
       <div>
         <p className="font-semibold uppercase tracking-[0.2em] text-brand-orange">Our story</p>
         <h2 className="mt-3 font-display text-3xl font-black text-brand-brown sm:text-4xl">
-          Cooking that tastes like home
+          Our Story
         </h2>
         <div className="mt-4 space-y-4 text-muted-foreground">
+          <p>If there's one thing that has always been a part of my life, it's good food.</p>
           <p>
-            Ennieskitchen began with a simple love for cooking and the joy of sharing good food
-            with family and friends. What started in a home kitchen has grown into a catering
-            service built on flavor, care, and consistency.
+            I was blessed to grow up surrounded by amazing women who loved to cook. Both of my
+            grandmothers were incredible cooks, and my mom is an excellent cook too. Some of my
+            favorite childhood memories are of watching my mom in the kitchen. I was always
+            curious—asking questions, paying attention to every step, and finding little ways to
+            help. Before I knew it, I had fallen in love with cooking.
           </p>
           <p>
-            Every dish is prepared fresh, seasoned with intention, and served with the same
-            warmth you'd expect from home. From hearty everyday meals to full event catering, we
-            take pride in creating food that brings people together.
+            I didn't learn to cook from a cookbook. I learned by watching, tasting, practicing,
+            and spending time in the kitchen with my family. That's where I discovered that
+            cooking isn't just about following a recipe. It's about patience, generosity, and
+            putting your heart into every meal.
+          </p>
+          <p>
+            As I got older, that love for cooking only grew stronger. I found so much joy in
+            feeding people and seeing how a good meal could bring family and friends together.
+            Eventually, what started as something I simply loved doing became Ennieskitchen.
+          </p>
+          <p>
+            Today, every meal we prepare is made fresh because that's the only way I know how to
+            cook. Whether you're ordering lunch for your family, catering a wedding, celebrating
+            a birthday, or hosting a corporate event, I want you to enjoy food that tastes like
+            it was made with care—not mass-produced.
+          </p>
+          <p>
+            Ennieskitchen is my way of sharing the flavors I grew up with and the traditions that
+            shaped me. Every order is personal because I know you're trusting us with your table
+            and your special moments, and that's something I never take for granted.
+          </p>
+          <p>
+            Thank you for being here and for allowing Ennieskitchen to be a part of your story. I
+            hope that every meal we serve brings people together, starts conversations, and
+            creates memories you'll always remember.
           </p>
         </div>
       </div>
@@ -44,19 +67,39 @@ export function FounderSection() {
             Meet the founder
           </p>
           <h2 className="mt-3 font-display text-3xl font-black text-brand-brown sm:text-4xl">
-            Ennie — chef, host and heart of the kitchen
+            Meet Ennie
           </h2>
           <div className="mt-4 space-y-4 text-muted-foreground">
+            <p>Hi, I’m Ennie, the founder and chef behind Ennieskitchen.</p>
             <p>
-              Ennieskitchen was founded by a passionate home cook whose love for food started
-              long before it became a business. Cooking has always been a way to show love,
-              celebrate culture, and create memories around the table.
+              To me, cooking has always been about people. I love being able to make something
+              with my hands and have it bring happiness to someone else. Whether it’s feeding a
+              family, helping someone celebrate a special occasion, or simply giving someone a
+              meal that reminds them of home, that’s the part of cooking I love the most.
             </p>
             <p>
-              With a focus on authentic flavors and quality ingredients, Ennieskitchen was
-              created to serve meals that feel personal, comforting, and made with care —
-              whether it's a small family dinner or a large celebration.
+              When I started Ennieskitchen, I wanted to create a place where people could enjoy
+              the Nigerian food I love while also experiencing the care that goes into making it.
+              I want my food to feel like something you would proudly put on your own family’s
+              table.
             </p>
+            <p>
+              Over the years, I’ve been blessed to cook for families, celebrations,
+              organizations, celebrities, and professional athletes. Those experiences mean a lot
+              to me, but honestly, some of my favorite moments are when a customer comes back and
+              says, “Ennie, that food was so good,” or tells me that it reminded them of home.
+            </p>
+            <p>Those are the moments that make all the hard work worth it.</p>
+            <p>
+              Ennieskitchen is something I’m deeply proud of. It’s my way of sharing my love for
+              food, my culture, and the joy that comes from feeding people.
+            </p>
+            <p>
+              Thank you for choosing Ennieskitchen and allowing me to be a small part of your
+              table and your special moments. I’m grateful for every order, every customer, and
+              everyone who continues to support this journey.
+            </p>
+            <p>I can’t wait to cook for you.</p>
           </div>
         </div>
         <img
@@ -70,61 +113,29 @@ export function FounderSection() {
   );
 }
 
-export function MissionSection() {
-  return (
-    <section className="mx-auto max-w-4xl px-4 py-16 text-center">
-      <p className="font-semibold uppercase tracking-[0.2em] text-brand-orange">Our mission</p>
-      <h2 className="mt-3 font-display text-3xl font-black text-brand-brown sm:text-4xl">
-        Great food, made with intention
-      </h2>
-      <p className="mt-4 text-muted-foreground">
-        Our mission is simple: to serve delicious, well-prepared meals that bring comfort and
-        joy to every occasion. We are committed to quality ingredients, authentic flavors, and
-        exceptional service — making every catering experience smooth, satisfying, and
-        memorable.
-      </p>
-      <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Button asChild size="lg">
-          <Link to="/menu">Explore the menu</Link>
-        </Button>
-        <Button asChild size="lg" variant="outline">
-          <Link to="/catering">Plan your event</Link>
-        </Button>
-      </div>
-    </section>
-  );
-}
-
 const REASONS = [
-  {
-    icon: Soup,
-    title: "Authentic Nigerian flavor",
-    body: "Egusi, efo riro, ofada, jollof and more — cooked the way they should be, seasoned with intention.",
-  },
+  { icon: Soup, body: "Our Meal tastes homemade, not mass-produced." },
   {
     icon: Leaf,
-    title: "Fresh, quality ingredients",
-    body: "Nothing sits waiting. Every order is cooked fresh after payment is received.",
+    body: "Freshly prepared for your order, so every tray gets the attention it deserves.",
+  },
+  {
+    icon: Utensils,
+    body: "Recipes passed down through generations, cooked with pride and authenticity.",
   },
   {
     icon: PartyPopper,
-    title: "Events of any size",
-    body: "From a family dinner to a full hall of guests, we scale trays to fit your celebration.",
+    body: "Generous portions, rich flavors, and food people actually remember.",
   },
+  { icon: Sparkles, body: "We keep it simple: good food, honest service, and happy customers." },
+  { icon: HandPlatter, body: "Every meal is cooked to be shared and enjoyed, just like at home." },
   {
     icon: Clock,
-    title: "Clear lead times",
-    body: "24 hours for regular orders, 48–72 hours for catering, so nothing is rushed.",
+    body: "We don't rush your food, we prepare every order with patience and care to ensure the best quality and taste.",
   },
   {
-    icon: HandPlatter,
-    title: "Easy pickup in Gardena",
-    body: "Pickup only in the Los Angeles area. Arrange a courier if you'd prefer it delivered.",
-  },
-  {
-    icon: Sparkles,
-    title: "Stress-free service",
-    body: "Order on WhatsApp, pay by Zelle, and collect a spread that's ready to serve.",
+    icon: Heart,
+    body: "When you choose Ennieskitchen, you're choosing a team that genuinely cares about your experience from the first conversation to the last bite.",
   },
 ];
 
@@ -136,11 +147,10 @@ export function WhyChoose() {
           Why choose Ennieskitchen
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {REASONS.map(({ icon: Icon, title, body }) => (
-            <div key={title} className="rounded-2xl border border-border bg-card p-6">
+          {REASONS.map(({ icon: Icon, body }) => (
+            <div key={body} className="rounded-2xl border border-border bg-card p-6">
               <Icon className="h-8 w-8 text-brand-orange" />
-              <h3 className="mt-4 font-display text-lg font-bold text-brand-brown">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{body}</p>
+              <p className="mt-4 text-sm text-muted-foreground">{body}</p>
             </div>
           ))}
         </div>
