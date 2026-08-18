@@ -7,9 +7,9 @@ const QUICK = [
   { to: "/menu", label: "Menu" },
   { to: "/order", label: "Order Online" },
   { to: "/catering", label: "Catering" },
+  { to: "/faq", label: "FAQ" },
   { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact" },
-  { to: "/faq", label: "FAQ" },
 ] as const;
 
 const POLICIES = [
@@ -133,7 +133,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-brand-cream/15 py-5 text-center text-xs text-brand-cream/70">
-        © 2024 Ennieskitchen. All rights reserved.
+        © 2026 Ennieskitchen. All rights reserved.
       </div>
     </footer>
   );

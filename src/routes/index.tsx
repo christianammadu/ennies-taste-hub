@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { StorySection, FounderSection, MissionSection, WhyChoose } from "@/components/sections";
+import { StorySection, FounderSection, WhyChoose } from "@/components/sections";
 import { SITE, whatsappLink } from "@/lib/site";
 import egusi from "@/assets/egusi.asset.json";
 import efoRiro from "@/assets/efo-riro.asset.json";
@@ -57,20 +57,23 @@ function HomePage() {
               {SITE.location}
             </p>
             <h1 className="mt-5 font-display text-4xl font-black leading-tight text-brand-brown sm:text-6xl">
-              Nigerian food &amp; catering{" "}
-              <span className="text-brand-red">{SITE.slogan}</span>
+              From family dinners to party catering, we serve authentic meals made with love and
+              quality ingredients.
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-brown/80">
-              Freshly cooked jollof rice, rich soups, peppered protein and party trays for your
-              family dinners and celebrations across Gardena and greater Los Angeles.
+              From family dinners to party catering, we serve authentic meals made with love and
+              quality ingredients.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link to="/menu">Order now</Link>
+                <Link to="/order">Order Now</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link to="/menu">View Our Menu</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href={whatsappLink()} target="_blank" rel="noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" /> Chat on WhatsApp
+                  <MessageCircle className="mr-2 h-5 w-5" /> Contact Us
                 </a>
               </Button>
             </div>
@@ -99,7 +102,6 @@ function HomePage() {
       <StorySection />
       <WhyChoose />
       <FounderSection />
-      <MissionSection />
     </div>
   );
 }

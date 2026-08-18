@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { StorySection, FounderSection, MissionSection, WhyChoose } from "@/components/sections";
+import { StorySection, FounderSection, WhyChoose } from "@/components/sections";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -42,7 +42,6 @@ function AboutPage() {
       </section>
       <StorySection />
       <FounderSection />
-      <MissionSection />
       <WhyChoose />
     </div>
   );

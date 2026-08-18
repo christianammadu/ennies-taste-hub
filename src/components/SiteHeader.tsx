@@ -10,10 +10,8 @@ const NAV = [
   { to: "/", label: "Home" },
   { to: "/menu", label: "Menu" },
   { to: "/catering", label: "Catering" },
-  { to: "/about", label: "About Us" },
-  { to: "/gallery", label: "Gallery" },
   { to: "/reviews", label: "Reviews" },
-  { to: "/contact", label: "Contact" },
+  { to: "/gallery", label: "Gallery" },
 ] as const;
 
 export function SiteHeader() {
