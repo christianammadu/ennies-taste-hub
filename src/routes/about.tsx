@@ -14,7 +14,7 @@ export const Route = createFileRoute("/about")({
       {
         property: "og:description",
         content:
-          "Our story, our mission and the chef behind every freshly prepared Nigerian meal.",
+          "Our story and the chef behind every freshly prepared Nigerian meal.",
       },
       { property: "og:url", content: "/about" },
     ],
