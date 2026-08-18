@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { combineDateTime, hoursFromNow, maskDateInput } from "@/lib/format";
-import { whatsappLink } from "@/lib/site";
+import { mailtoLink } from "@/lib/site";
 
 export const Route = createFileRoute("/catering")({
   head: () => ({
@@ -78,7 +78,7 @@ function CateringPage() {
       `Dishes of interest: ${form.dishes || "Open to recommendations"}`,
       `Notes: ${form.notes || "None"}`,
     ].join("\n");
-    window.open(whatsappLink(message), "_blank", "noopener");
+    window.location.href = mailtoLink("Ennieskitchen catering inquiry", message);
   }
 
   return (
@@ -145,7 +145,7 @@ function CateringPage() {
         )}
 
         <Button type="submit" size="lg" className="mt-6 w-full">
-          <MessageCircle className="mr-2 h-5 w-5" /> Send catering inquiry on WhatsApp
+          <Mail className="mr-2 h-5 w-5" /> Send catering inquiry by email
         </Button>
       </form>
     </div>

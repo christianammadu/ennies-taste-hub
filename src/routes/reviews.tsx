@@ -1,5 +1,11 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { Star } from "lucide-react";
+import { MessageCircle, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { whatsappLink } from "@/lib/site";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -32,6 +38,24 @@ const REVIEWS = [
 ];
 
 function ReviewsPage() {
+  const [name, setName] = useState("");
+  const [review, setReview] = useState("");
+  const [error, setError] = useState("");
+
+  function sendReview(e: React.FormEvent) {
+    e.preventDefault();
+    if (!name.trim() || !review.trim()) {
+      setError("Please add your name and your review.");
+      return;
+    }
+    setError("");
+    window.open(
+      whatsappLink(`ENNIESKITCHEN REVIEW\n\nName: ${name}\n\nReview: ${review}`),
+      "_blank",
+      "noopener",
+    );
+  }
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-14">
       <h1 className="font-display text-4xl font-black text-brand-brown">Customer reviews</h1>
@@ -51,6 +75,37 @@ function ReviewsPage() {
           </figure>
         ))}
       </div>
+
+      <form
+        onSubmit={sendReview}
+        className="mt-12 max-w-2xl rounded-2xl border border-border bg-card p-6"
+      >
+        <h2 className="font-display text-2xl font-black text-brand-brown">Leave a review</h2>
+        <div className="mt-4 space-y-4">
+          <div>
+            <Label htmlFor="r-name">Name</Label>
+            <Input
+              id="r-name"
+              maxLength={100}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <Label htmlFor="r-text">Review</Label>
+            <Textarea
+              id="r-text"
+              maxLength={1000}
+              value={review}
+              onChange={(e) => setReview(e.target.value)}
+            />
+          </div>
+        </div>
+        {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
+        <Button type="submit" size="lg" className="mt-5 w-full">
+          <MessageCircle className="mr-2 h-5 w-5" /> Send Review on WhatsApp
+        </Button>
+      </form>
     </div>
   );
 }
