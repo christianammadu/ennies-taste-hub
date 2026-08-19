@@ -57,23 +57,20 @@ function HomePage() {
               {SITE.location}
             </p>
             <h1 className="mt-5 font-display text-4xl font-black leading-tight text-brand-brown sm:text-6xl">
-              From family dinners to party catering, we serve authentic meals made with love and
-              quality ingredients.
+              Nigerian food &amp; catering{" "}
+              <span className="text-brand-red">{SITE.slogan}</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-brown/80">
-              From family dinners to party catering, we serve authentic meals made with love and
-              quality ingredients.
+              Freshly cooked jollof rice, rich soups, peppered protein and party trays for your
+              family dinners and celebrations across Gardena and greater Los Angeles.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link to="/order">Order Now</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link to="/menu">View Our Menu</Link>
+                <Link to="/order">Order now</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href={whatsappLink()} target="_blank" rel="noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" /> Contact Us
+                  <MessageCircle className="mr-2 h-5 w-5" /> Chat on WhatsApp
                 </a>
               </Button>
             </div>
