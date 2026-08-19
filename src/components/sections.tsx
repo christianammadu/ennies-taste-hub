@@ -7,15 +7,12 @@ export function StorySection() {
     <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
       <img
         src={founderStory.url}
-        alt="Ennie, founder of Ennieskitchen, in traditional Nigerian attire"
+        alt="Ennie, founder and chef of Ennieskitchen, wearing chef whites."
         className="w-full rounded-3xl object-cover shadow-lg"
         loading="lazy"
       />
       <div>
         <p className="font-semibold uppercase tracking-[0.2em] text-brand-orange">Our story</p>
-        <h2 className="mt-3 font-display text-3xl font-black text-brand-brown sm:text-4xl">
-          Our Story
-        </h2>
         <div className="mt-4 space-y-4 text-muted-foreground">
           <p>If there's one thing that has always been a part of my life, it's good food.</p>
           <p>
@@ -104,7 +101,7 @@ export function FounderSection() {
         </div>
         <img
           src={founderChef.url}
-          alt="Ennie in chef whites presenting freshly cooked Nigerian dishes"
+          alt="Ennie, founder and chef of Ennieskitchen, wearing chef whites."
           className="order-1 w-full rounded-3xl object-cover shadow-lg lg:order-2"
           loading="lazy"
         />
