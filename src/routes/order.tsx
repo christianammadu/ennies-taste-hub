@@ -236,7 +236,7 @@ function OrderPage() {
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" className="flex-1">
-              <a href={whatsappLink(message)} target="_blank" rel="noreferrer">
+              <a href={whatsappLink(message)} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" /> Send order on WhatsApp
               </a>
             </Button>

@@ -69,7 +69,7 @@ function HomePage() {
                 <Link to="/order">Order now</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href={whatsappLink()} target="_blank" rel="noreferrer">
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="mr-2 h-5 w-5" /> Chat on WhatsApp
                 </a>
               </Button>
