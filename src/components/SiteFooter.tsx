@@ -4,12 +4,15 @@ import logo from "@/assets/logo.asset.json";
 import { SITE } from "@/lib/site";
 
 const QUICK = [
+  { to: "/", label: "Home" },
   { to: "/menu", label: "Menu" },
-  { to: "/order", label: "Order Online" },
   { to: "/catering", label: "Catering" },
+  { to: "/reviews", label: "Reviews" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/order", label: "Order Online" },
   { to: "/faq", label: "FAQ" },
-  { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact" },
+  { to: "/about", label: "About Us" },
 ] as const;
 
 const POLICIES = [
