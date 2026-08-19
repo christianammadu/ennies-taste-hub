@@ -80,7 +80,7 @@ export function SiteFooter() {
               <a
                 href={SITE.whatsappUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-brand-gold"
               >
                 <MessageCircle className="h-4 w-4" /> {SITE.whatsappDisplay}
@@ -99,7 +99,7 @@ export function SiteFooter() {
             <a
               href={SITE.socials.instagram}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Ennieskitchen on Instagram"
               className="grid h-10 w-10 place-items-center rounded-full bg-brand-cream/10 hover:bg-brand-gold hover:text-brand-brown"
             >
@@ -108,7 +108,7 @@ export function SiteFooter() {
             <a
               href={SITE.socials.facebook}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Ennieskitchen on Facebook"
               className="grid h-10 w-10 place-items-center rounded-full bg-brand-cream/10 hover:bg-brand-gold hover:text-brand-brown"
             >
@@ -117,7 +117,7 @@ export function SiteFooter() {
             <a
               href={SITE.socials.tiktok}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Ennieskitchen on TikTok"
               className="grid h-10 w-10 place-items-center rounded-full bg-brand-cream/10 hover:bg-brand-gold hover:text-brand-brown"
             >
@@ -126,7 +126,7 @@ export function SiteFooter() {
             <a
               href={SITE.socials.whatsapp}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Chat with Ennieskitchen on WhatsApp"
               className="grid h-10 w-10 place-items-center rounded-full bg-brand-cream/10 hover:bg-brand-gold hover:text-brand-brown"
             >

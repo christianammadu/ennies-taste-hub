@@ -44,7 +44,7 @@ export function SiteHeader() {
             size="sm"
             className="hidden border-brand-brown/25 text-brand-brown sm:inline-flex"
           >
-            <a href={SITE.whatsappUrl} target="_blank" rel="noreferrer">
+            <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-1 h-4 w-4" /> WhatsApp
             </a>
           </Button>
@@ -95,7 +95,7 @@ export function SiteHeader() {
                 <Link to="/menu">Order Now</Link>
               </Button>
               <Button asChild variant="outline" className="flex-1">
-                <a href={SITE.whatsappUrl} target="_blank" rel="noreferrer">
+                <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
               </Button>

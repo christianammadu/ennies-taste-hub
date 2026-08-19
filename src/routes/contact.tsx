@@ -54,7 +54,7 @@ function ContactPage() {
         </li>
       </ul>
       <Button asChild size="lg" className="mt-8">
-        <a href={whatsappLink()} target="_blank" rel="noreferrer">
+        <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
           <MessageCircle className="mr-2 h-5 w-5" /> Message us on WhatsApp
         </a>
       </Button>
