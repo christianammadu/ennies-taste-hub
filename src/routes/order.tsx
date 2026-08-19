@@ -15,8 +15,6 @@ import {
   maskDateInput,
   money,
 } from "@/lib/format";
-import tipJar from "@/assets/tip-jar-qr.asset.json";
-import mealQr from "@/assets/meal-payment-qr.asset.json";
 
 export const Route = createFileRoute("/order")({
   head: () => ({
