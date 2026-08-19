@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "48b7b062-7dbc-46ce-8b3d-7b0c3d107901",
-  "project_id": "60c8de3d-fa13-4aff-b521-0056986845a9",
-  "url": "/__l5e/assets-v1/48b7b062-7dbc-46ce-8b3d-7b0c3d107901/egusi.jpg",
-  "r2_key": "a/v1/60c8de3d-fa13-4aff-b521-0056986845a9/48b7b062-7dbc-46ce-8b3d-7b0c3d107901/egusi.jpg",
-  "original_filename": "egusi.jpg",
-  "size": 390474,
   "content_type": "image/jpeg",
-  "created_at": "2026-08-10T22:44:49Z"
+  "created_at": "2026-08-10T22:44:49Z",
+  "original_filename": "egusi.jpg",
+  "project_id": "4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4",
+  "r2_key": "a/v1/4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4/48b7b062-7dbc-46ce-8b3d-7b0c3d107901/egusi.jpg",
+  "size": 390474,
+  "url": "/__l5e/assets-v1/48b7b062-7dbc-46ce-8b3d-7b0c3d107901/egusi.jpg",
+  "version": 1
 }

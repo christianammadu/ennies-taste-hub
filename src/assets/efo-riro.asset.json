@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "3d867d9a-8809-4169-8384-026dbbd29cc3",
-  "project_id": "60c8de3d-fa13-4aff-b521-0056986845a9",
-  "url": "/__l5e/assets-v1/3d867d9a-8809-4169-8384-026dbbd29cc3/efo-riro.jpg",
-  "r2_key": "a/v1/60c8de3d-fa13-4aff-b521-0056986845a9/3d867d9a-8809-4169-8384-026dbbd29cc3/efo-riro.jpg",
-  "original_filename": "efo-riro.jpg",
-  "size": 1048658,
   "content_type": "image/jpeg",
-  "created_at": "2026-08-10T22:44:58Z"
+  "created_at": "2026-08-10T22:44:58Z",
+  "original_filename": "efo-riro.jpg",
+  "project_id": "4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4",
+  "r2_key": "a/v1/4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4/3d867d9a-8809-4169-8384-026dbbd29cc3/efo-riro.jpg",
+  "size": 1048658,
+  "url": "/__l5e/assets-v1/3d867d9a-8809-4169-8384-026dbbd29cc3/efo-riro.jpg",
+  "version": 1
 }

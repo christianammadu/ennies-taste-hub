@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "322c1e06-89e7-49f9-8754-e6ff1fa6fc9f",
-  "project_id": "60c8de3d-fa13-4aff-b521-0056986845a9",
-  "url": "/__l5e/assets-v1/322c1e06-89e7-49f9-8754-e6ff1fa6fc9f/boiled-rice.jpg",
-  "r2_key": "a/v1/60c8de3d-fa13-4aff-b521-0056986845a9/322c1e06-89e7-49f9-8754-e6ff1fa6fc9f/boiled-rice.jpg",
-  "original_filename": "boiled-rice.jpg",
-  "size": 878429,
   "content_type": "image/jpeg",
-  "created_at": "2026-08-10T22:44:55Z"
+  "created_at": "2026-08-10T22:44:55Z",
+  "original_filename": "boiled-rice.jpg",
+  "project_id": "4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4",
+  "r2_key": "a/v1/4ce0e88a-e1fc-4031-86c4-1a12e7e4fce4/322c1e06-89e7-49f9-8754-e6ff1fa6fc9f/boiled-rice.jpg",
+  "size": 878429,
+  "url": "/__l5e/assets-v1/322c1e06-89e7-49f9-8754-e6ff1fa6fc9f/boiled-rice.jpg",
+  "version": 1
 }
