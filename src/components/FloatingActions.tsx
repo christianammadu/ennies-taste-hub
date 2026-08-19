@@ -23,7 +23,7 @@ export function FloatingActions() {
       <a
         href={SITE.whatsappUrl}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         aria-label="Chat with Ennieskitchen on WhatsApp"
         className="grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105"
       >
