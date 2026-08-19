@@ -486,7 +486,7 @@ function PaymentPanel() {
       <div className="mt-4 grid grid-cols-2 gap-3">
         <figure>
           <img
-            src={mealQr.url}
+            src="/images/meal-payment-qr.jpg"
             alt="PayPal QR code for Ennieskitchen meal payments"
             className="w-full rounded-lg bg-white p-2"
             loading="lazy"
@@ -497,7 +497,7 @@ function PaymentPanel() {
         </figure>
         <figure>
           <img
-            src={tipJar.url}
+            src="/images/tip-jar-qr.jpg"
             alt="PayPal QR code for the Ennieskitchen tip jar"
             className="w-full rounded-lg bg-white p-2"
             loading="lazy"
